@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Portifólio</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-m"></i>
+            </div><!--logo-->
+            <div class="cabecalho_link">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+               <button class="button" onclick="abrirModal()">Meu Contato </button>
+               <div id="modalContato" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="fecharModal()">&times;</span>
+                    <h2>Entre em Contato</h2>
+                    <p>Email: marialuizalima577@gmail.com</p>
+                    <p>Telefone: (99) 98823-9260</p>
+                    <div class="redes-sociais">
+                        <a href="https://www.linkedin.com/in/maria-luiza-lima577/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/lluizaslm" target="_blank">GitHub</a>
+                        <a href="https://www.instagram.com/lluiza.slm/" target="_blank">Instagram</a>
+                    </div>
+                    <form>
+                        <label for="mensagem">Envie uma Mensagem:</label>
+                        <textarea id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            </div><!--cabecalho_link-->
+        </header>
+        <main>
+            <section id="home" class="topo_site">
+                <div class="image-container">
+                    <div class="gif-wrapper">
+                        <img src="./imagens/giphy.webp" alt="Background GIF" class="background-gif" />
+                    </div><!--gif-wrapper-->
+                    <img src="./imagens/picrew.png" alt="Maria Luiza Lima" class="profile-pic" />
+                </div><!--image-container-->
+                <div class="container_text">
+                    <div class="text">
+                        <h3>Hello, World!</h3>
+                        <h2>Eu sou Maria Luiza Lima</h2>
+                        <h3>Desenvolvedora Front-end</h3>
+                        <br>
+                    </div><!--text-->
+                </div><!--container_text-->
+            </section><!--topo_site-->
+
+            <section id="sobre" class="sobre">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="img_sobre">
+                            <img src="./imagens/image_me.jpeg" alt="minhaFoto">
+                        </div><!--img_sobre-->
+                        <div class="txt_sobre">
+                            <h2>Prazer,<span>sou Maria Luiza.</span></h2>
+                            <p>Sou estudante do 5° período do curso de Sistemas de Informção no Instituto Federal do Maranhão-IFMA</p>
+                            <p>Apaixonada por criar experiências digitais incríveis que combinam estética, funcionalidade e performance. Meu objetivo é transformar ideias em interfaces interativas, acessíveis e envolventes.</p>
+                        </div><!--txt_sobre-->
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section><!--sobre-->
+
+            <section id="skills" class="skills">
+                <div class="interface_skills">
+                    <h2>Skills</h2>
+                    <div class="flex_skills">
+                        <div class="skills_box">
+                            <p>HTML<i class="fa-brands fa-html5"></i></p>
+                            <p>CSS<i class="fa-brands fa-css3-alt"></i></p>
+                            <p>JavaSript<i class="fa-brands fa-js"></i></p>
+                            <p>React<i class="fa-brands fa-react"></i></p>
+                            <p>Java<i class="fa-brands fa-java"></i></p>
+                            <p>Git<i class="fa-brands fa-git-alt"></i></p>
+                            <p>GitHub<i class="fa-brands fa-github"></i></p>
+                            <p>C<i class="fa-solid fa-c"></i></p>
+                        </div><!--skills_box-->
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section><!--skills-->
+
+            <section id="projetos" class="projetos">
+                <div class="interface_projetos">
+                    <h2>Projetos</h2>
+                    <div class="flex_projetos">
+                        <!--projeto 1-->
+                        <div class="img_port" style="background-image: url(./imagens/decodificador.png);">
+                            <div class="projeto_overlay">
+                                <h3>Decodificador de Texto</h3>
+                                <a href="https://lluizaslm.github.io/Decodificador-de-Texto/" target="_blank"></a>
+                            </div>
+                        </div>
+                        <!--projeto 2-->
+                        <div class="img_port" style="background-image: url(./imagens/aluraPlay.png);">
+                            <div class="projeto_overlay">
+                                <h3>Alura Play</h3>
+                                <a href=https://github.com/lluizaslm/Alura-play-ProjetoOne.git
+                                 target="_blank"></a>
+                            </div>
+                        </div>
+                        <!--projeto 3-->
+                        <div class="img_port"></div> 
+                    </div>
+                </div>
+            </section><!--projetos-->
+        </main>
+        <footer class="rodape">
+            <div class="container_rodape">
+                <p>&copy; 2024 Maria Luiza - Todos os direitos reservados.</p>
+                <ul class="social_links">
+                    <li><a href="https://github.com/lluizaslm" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/maria-luiza-lima577" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:marialuizalima577@gmail.com">Email</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
